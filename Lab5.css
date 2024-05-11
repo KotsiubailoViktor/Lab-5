@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.screen {
+  background: #666;
+  color: white;
+  padding: 20px;
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-row {
+  display: flex;
+}
+
+.button {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+  background-color: #444;
+  border: 1px solid black;
+}
+
+.button:not(:last-child) {
+  border-right: 1px solid #666;
+  margin-right: -1px;
+}
+
+.button.orange {
+  background: orange;
+}
+
+.button.orange:hover {
+  background: darkorange;
+}
+
+.button.zero {
+  flex: 3.2;
+}
+
+.button.comma {
+  flex: 1;
+}
+
+.button.equals {
+  flex: 1;
+}
